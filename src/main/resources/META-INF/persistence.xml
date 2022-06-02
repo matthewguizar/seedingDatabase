@@ -1,0 +1,22 @@
+<persistence  xmlns="http://java.sun.com/xml/ns/persistence"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+              version="2.0">
+    <persistence-unit name="topRatedMovies-persistenceUnit">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL95Dialect"/>
+
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://ec2-54-147-33-38.compute-1.amazonaws.com:5432/d59msm1s20rbqc"/>
+            <property name="javax.persistence.jdbc.user" value="wryaebzazqrdxe"/>
+            <property name="javax.persistence.jdbc.password" value="b6ee69cd74ee8ccfe6849b1942e48900e9c3ffba751760e304e809afe3093acc"/>
+        </properties>
+    </persistence-unit>
+
+</persistence>
